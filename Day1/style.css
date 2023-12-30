@@ -28,6 +28,13 @@
     animation: loader 1.5s ease-in-out infinite;
 }
 
+/* Musiccccc enddddddddddddd */
+
+
+
+
+/* LOADER STARTTTTTTTTTTTTTTTTTTTTTTTTT */
+
 @keyframes loader {
     0%,100%{
         height: 10px;
