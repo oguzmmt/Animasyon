@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+}
+
+.music-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+   
+}
+
+.music{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    display: inline-flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.music .bar {
+    width: 12px;
+    border-radius: 10px;
+    background: white;
+    animation: loader 1.5s ease-in-out infinite;
+}
+
+@keyframes loader {
+    0%,100%{
+        height: 10px;
+    }
+    50%{
+        height: 85px;
+    }
+}
+
+.music .bar:nth-child(1){
+    background: purple;
+    animation-delay: 1.2s;
+}
+.music .bar:nth-child(2){
+    background: rgb(4, 8, 255);
+    animation-delay: 1.4s;
+}
+.music .bar:nth-child(3){
+    background: rgb(35, 211, 255);
+    animation-delay: 1.6s;
+}
+.music .bar:nth-child(4){
+    background: rgb(61, 238, 170);
+    animation-delay: 1.8s;
+}
+.music .bar:nth-child(5){
+    background: rgb(94, 255, 1);
+    animation-delay: 2s;
+}
+.music .bar:nth-child(6){
+    background: rgb(255, 255, 255);
+    animation-delay: 2s;
+}
+.music .bar:nth-child(7){
+    background: rgb(255, 0, 0);
+    animation-delay: 1.8s;
+}
+.music .bar:nth-child(8){
+    background: rgb(187, 255, 0);
+    animation-delay: 1.6s;
+}
+.music .bar:nth-child(9){
+    background: rgb(0, 165, 194);
+    animation-delay: 1.4s;
+}
+.music .bar:nth-child(10){
+    background: rgb(230, 255, 2);
+    animation-delay: 1.2s;   
+}
+
+.loader-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    background: #014d57;
+    animation: animateBg 10s linear infinite;
+}
+
+@keyframes animateBg{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.loader span{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    transform: rotate(calc(18deg * var(--i)));
+}
+
+.loader span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #00ff0a;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ff0a,
+                0 0 20px #00ff0a,
+                0 0 40px #00ff0a,
+                0 0 60px #00ff0a,
+                0 0 80px #00ff0a,
+                0 0 100px #00ff0a;
+    animation: animate 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(1);
+    }
+    80%,100%{
+        transform: scale(0);
+    }
+}
