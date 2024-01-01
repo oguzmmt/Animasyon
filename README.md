@@ -6,3 +6,7 @@ Animasyon Çalışmaları
 -Müzik bölümü, içeriği yatayda ortalar, böylece müzik çubukları temiz ve düzenli bir görünüm sunar. Her bir müzik çubuğu, dinamik bir yükseklik değişimi ile birlikte çeşitli renklerle görsel ritim yakalar.
 
 -Değişen bir arkaplan modu ve dönen renkli ögelerle sayfaya farklı bir renk katar
+
+#Day 2
+
+- BUTON animasyonu ve Kutu Animasyonu
